@@ -1,0 +1,34 @@
+https://azuna-pixels.itch.io/free-food-icons
+https://cobgoblin.itch.io/gameboy-tools-and-resources
+https://opengameart.org/content/tree-8
+https://opengameart.org/content/lpc-style-farm-animals
+https://opengameart.org/content/blue-button-set
+
+תחילת המשחק:
+6-wood
+6-food
+6-water
+slot-3 dice
+
+פונקציות:
+כפטור הוסף קובייה
+ניתן להוסיף עד 5 קוביות ביום
+במידה ולוחצים אליו מתווספת קובייה אבל נלקח בין 1 ל 3 מאחד המשאבים
+המחיר נקבע בתחילת כל יום
+
+
+
+היום הבא:
+מוסיף יום אבל לוקח בין אחד ל1 ל 6 מכל משאב
+מתווסף אוטומטית קובייה(במידה ויש מקום בשלוט)
+מתים כאשר יש פחות מ-0
+מנצחים כאשר עובר שבוע.
+כשעוברים יום הערך של הקובייה משתנה
+
+ארועים:
+בונוס כפטור איפוב ל6 ניתן להשתמש בוא פעם אחת במשחק
+
+
+מטרה: 
+לשרוד 5 ימים
+(ואז יש אפשרות לצאת או להמשיך לנסות להגיע למספר הכי גובוהה
