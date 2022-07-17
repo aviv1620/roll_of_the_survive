@@ -22,6 +22,12 @@ public class SlotManager : MonoBehaviour
         StartCoroutine(RollDice());
     }
 
+    public void ReRoll()
+    {
+        if (slotSwitch.dice.activeSelf)
+            Roll();
+    }
+
     private IEnumerator RollDice()
     {
         yield return new WaitForSeconds(TimeAnim);

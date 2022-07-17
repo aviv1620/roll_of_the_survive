@@ -25,6 +25,11 @@ public class DiceAnim : MonoBehaviour
 
     }
 
+    public void setFrame(int frame)
+    {
+        image.sprite = sprites[frame];
+    }
+
 
     private IEnumerator WaitAndReplace()
     {

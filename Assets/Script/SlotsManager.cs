@@ -57,6 +57,14 @@ public class SlotsManager : MonoBehaviour
         }
     }
 
+    public void ReRoll()
+    {
+        foreach (SlotManager slot in slotsMan)
+        {
+            slot.ReRoll();
+        }
+    }
+
     private void slotChange()
     {
         onChange.Invoke();

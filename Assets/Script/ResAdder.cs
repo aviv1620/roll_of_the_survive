@@ -10,6 +10,8 @@ public class ResAdder : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     public UnityEvent ptrEnter;
     public UnityEvent ptrExit;
 
+    public UnityEvent drop;
+
 
     public TMP_Text label;
     private int vlaue;
@@ -35,6 +37,7 @@ public class ResAdder : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         SlotManager slotManager = GetComponentInParent<SlotManager>();
         slotManager.Occupied();
 
+        drop.Invoke();
         ptrExit.Invoke();
     }
 

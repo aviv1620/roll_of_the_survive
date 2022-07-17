@@ -12,6 +12,14 @@ public class Resource : Counter
     [HideInInspector]
     public UnityEvent onChange;
 
+    public UnityEvent onLose;
+
+    public GameObject Dice;
+    public float timeRoll = 0.5f;
+    public ManagerDiceLevel managerDiceLevel;
+    public MsgTemporary msgTemporary;
+    private int numToReduc = -1;
+
     protected override void updateValue()
     {
         count.text = value.ToString();
@@ -27,5 +35,42 @@ public class Resource : Counter
             Instantiate(cointPref, cointConteiner);
 
         onChange.Invoke();
+    }
+
+    public void Lose()
+    {
+        onLose.Invoke();
+    }
+
+    public void Roll()
+    {
+        StartCoroutine(WaitEndRoll());
+    }
+
+    private IEnumerator WaitEndRoll()
+    {
+        DiceAnim diceAnim = Dice.GetComponent<DiceAnim>();
+
+        Dice.SetActive(true);
+        diceAnim.enabled = true;
+        yield return new WaitForSeconds(timeRoll);
+        
+        System.Random myRandom = managerDiceLevel.myRandom;
+        numToReduc = myRandom.Next(6);
+        diceAnim.setFrame(numToReduc);
+        numToReduc++;
+        msgTemporary.play("-" + numToReduc);
+        //Debug.Log("numToReduc "+ numToReduc);
+
+        diceAnim.enabled = false;
+    }
+
+    public void DeActiveDice()
+    {
+        bool lose = !Remove(numToReduc);
+        if (lose)
+            Lose();
+
+        Dice.SetActive(false);
     }
 }

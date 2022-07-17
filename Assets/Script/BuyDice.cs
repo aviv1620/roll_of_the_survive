@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
@@ -12,6 +13,7 @@ public class BuyDice : MonoBehaviour
 
     private Button button;
 
+    public UnityEvent buy;
 
     private void Start()
     {
@@ -36,6 +38,7 @@ public class BuyDice : MonoBehaviour
             return;
         }
 
+        buy.Invoke();
 
         int num = addDiceNum.num;
         resource.Remove(num);
