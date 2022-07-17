@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 [SerializeField]
@@ -17,7 +18,9 @@ public class SlotSwitch : MonoBehaviour
     public GameObject empty;
     public GameObject occupied;
 
-    
+    [HideInInspector]
+    public UnityEvent onChange;
+
 
 
     public void switchTo(SlotMode mode)
@@ -46,5 +49,6 @@ public class SlotSwitch : MonoBehaviour
             bool active = child.gameObject == obj;
             child.gameObject.SetActive(active);
         }
+        onChange.Invoke();
     }
 }

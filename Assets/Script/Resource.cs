@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class Resource : Counter
 {
     public Transform cointConteiner;
     public GameObject cointPref;
+
+    [HideInInspector]
+    public UnityEvent onChange;
 
     protected override void updateValue()
     {
@@ -22,5 +26,6 @@ public class Resource : Counter
         for (int i=0;i< value;i++)
             Instantiate(cointPref, cointConteiner);
 
+        onChange.Invoke();
     }
 }

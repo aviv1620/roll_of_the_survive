@@ -5,11 +5,13 @@ using UnityEngine.EventSystems;
 
 public class Dice : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    public GameObject UiDice;
 
-    public Transform selectedSlot;
-    public Transform parentcanves;
-    public Transform DiceMainObj;
+    private UiDiceManager uiDiceManager;
+
+    private void Start()
+    {
+        uiDiceManager = GetComponentInParent<UiDiceManager>();
+    }
 
     public void OnBeginDrag(PointerEventData eventData)//IBeginDragHandler, IDragHandler and IEndDragHandler need to make OnDrop call in ResAdder
     {               
@@ -20,27 +22,21 @@ public class Dice : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     }
 
     public void OnEndDrag(PointerEventData eventData)//IBeginDragHandler, IDragHandler and IEndDragHandler need to make OnDrop call in ResAdder
-    {       
+    {
+       
     }
 
    
     public void OnPointerDown(PointerEventData pointerEventData)
     {
-        DiceMainObj.SetParent(selectedSlot);        
-        UiDice.SetActive(true);
+        uiDiceManager.ShowUi();       
     }
 
    
     public void OnPointerUp(PointerEventData pointerEventData)
     {
-        StartCoroutine(DeActiveUi());      
-    }
-
-    private IEnumerator DeActiveUi()
-    {       
-        yield return new WaitForEndOfFrame();
-        yield return new WaitForEndOfFrame();         
-        UiDice.SetActive(false);
-        DiceMainObj.SetParent(parentcanves);
-    }
+        Debug.Log("OnPointerUp");
+        uiDiceManager.HideUi();
+            
+    }    
 }

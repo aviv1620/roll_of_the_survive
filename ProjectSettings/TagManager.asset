@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameManager
+  - EmptySlot
   layers:
   - Default
   - TransparentFX

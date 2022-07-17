@@ -1,6 +1,11 @@
 גימורים:
 מה קורה עם השחקן רושם אפס
 
+נשאר:
+1)להוסיף קובייה V
+2)הודעות פופאפ(ניצחון,הפסד,פאוס)
+3)מעבר יום
+
 
 https://azuna-pixels.itch.io/free-food-icons
 https://cobgoblin.itch.io/gameboy-tools-and-resources

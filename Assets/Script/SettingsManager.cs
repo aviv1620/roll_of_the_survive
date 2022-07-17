@@ -15,6 +15,8 @@ public class SettingsManager : MonoBehaviour
     public static int Seed_Level = 668513;
     public static int Seed_Animation = 668514;
 
+    
+
     void Awake()
     {
         System.Random rnd = new System.Random();
@@ -25,5 +27,8 @@ public class SettingsManager : MonoBehaviour
         UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
     }
 
-   
+
+
+
+
 }

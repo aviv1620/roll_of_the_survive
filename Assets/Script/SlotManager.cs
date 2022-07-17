@@ -35,7 +35,8 @@ public class SlotManager : MonoBehaviour
 
     public void Empty()
     {
-        slotSwitch.switchTo(SlotMode.empty);
+        if(slotSwitch.occupied.activeSelf)
+            slotSwitch.switchTo(SlotMode.empty);
     }
 }
 

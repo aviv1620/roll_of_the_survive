@@ -158,10 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d651118f0bc1e24ba4ab474e358923d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiDice: {fileID: 8827953380387093083}
-  selectedSlot: {fileID: 0}
-  parentcanves: {fileID: 0}
-  DiceMainObj: {fileID: 8827953380599194633}
 --- !u!114 &8827953379894614654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +907,7 @@ GameObject:
   - component: {fileID: 8827953380599194635}
   - component: {fileID: 8827953380599194637}
   - component: {fileID: 8827953380599194636}
+  - component: {fileID: 7809167633707031980}
   - component: {fileID: 8827953380599194634}
   m_Layer: 5
   m_Name: slot
@@ -980,6 +977,24 @@ MonoBehaviour:
   dice: {fileID: 8827953379894614652}
   empty: {fileID: 8827953381487105978}
   occupied: {fileID: 8827953380219898179}
+  onChange:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7809167633707031980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827953380599194632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83736b663b006d643893b89c623a36af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UiDice: {fileID: 8827953380387093083}
+  selectedSlot: {fileID: 0}
+  unSelectedSlot: {fileID: 0}
 --- !u!114 &8827953380599194634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1495,7 +1510,7 @@ GameObject:
   - component: {fileID: 8827953381487105979}
   m_Layer: 5
   m_Name: Empty
-  m_TagString: Untagged
+  m_TagString: EmptySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
