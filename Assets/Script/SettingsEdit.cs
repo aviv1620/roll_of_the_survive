@@ -6,14 +6,19 @@ using TMPro;
 
 public class SettingsEdit : MonoBehaviour
 {
+    [HideInInspector]
     public bool default_Play_Tutorial;
+    [HideInInspector]
     public int default_Cost_Dice;
+    [HideInInspector]
     public int default_Days_To_Recue;
-
+    [HideInInspector]
     public bool default_Play_Choose_Seeds;
-
+    [HideInInspector]
     public int default_Seed_Dices;
+    [HideInInspector]
     public int default_Seed_Level;
+    [HideInInspector]
     public int default_Seed_Animation;
 
 

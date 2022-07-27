@@ -13,10 +13,18 @@ public class LoseReason : MonoBehaviour
     public string foodReason;
     public string woodReason;
     public string waterReason;
-    
-
-   private void LoadReason(string template)
+  
+    private void highestDays(int value)
     {
+        int m_Score = PlayerPrefs.GetInt("score", 0);
+        PlayerPrefs.SetInt("score", Mathf.Max(value, m_Score));
+
+    }
+
+    private void LoadReason(string template)
+    {
+        //
+        highestDays(dayes.value);
         string str = string.Format(template, dayes.value); ;
         TMP_Text label = GetComponent<TMP_Text>();
         label.text = str;

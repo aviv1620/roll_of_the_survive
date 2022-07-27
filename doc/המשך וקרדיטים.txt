@@ -6,16 +6,18 @@
 
 עיצובים:
 חשוב:
-לעצב לוגו וגם לשים היכן שרשום"yor logo hare"
-לעצב מפה
-לשים דמות ואיזה ואיזה אנימציה של ספינה בוערת.
-להוסיף קרדיטים
+לעצב מפה V
+לעצב לוגו וגם לשים היכן שרשום"yor logo hare" V
+לשים דמות ואיזה ואיזה אנימציה של ספינה בוערת. V
+להוסיף קרדיטים V
+
+
 לעצב את עמוד הitch.
 ולכתוב הערות
 
 פחות חשוב:
-לעצב את טפריט המאין מניו
-לעצב את טפריטי המשחק(פאוס ניצחון והפסד)
+לעצב את טפריט המאין מניו V
+לעצב את טפריטי המשחק(פאוס ניצחון והפסד) X
 
 
 
@@ -27,6 +29,15 @@
 
 https://azuna-pixels.itch.io/free-food-icons
 https://cobgoblin.itch.io/gameboy-tools-and-resources
+https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements
+http://riskylab.com/tilemap/#
+https://opengameart.org/content/tree-variations-from-jetrels-wood-tileset
+https://opengameart.org/content/16x16-animated-campfire
+https://opengameart.org/content/smoke-fire-animated-particle-16x16
+https://cooltext.com/
+
+
+לא בשימוש
 https://opengameart.org/content/tree-8
 https://opengameart.org/content/lpc-style-farm-animals
 https://opengameart.org/content/blue-button-set

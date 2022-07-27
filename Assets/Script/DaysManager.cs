@@ -60,6 +60,10 @@ public class DaysManager : MonoBehaviour
         resWood.Roll();
         resWater.Roll();
 
+        diceFood.Roll();
+        diceWood.Roll();
+        diceWater.Roll();
+
         slotsManager.ReRoll();
         yield return new WaitForSeconds(1f);
 
