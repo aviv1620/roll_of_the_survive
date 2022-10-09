@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 122333608}
   - component: {fileID: 122333607}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Panel About
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 136819875}
   - component: {fileID: 136819874}
   m_Layer: 5
-  m_Name: Btn Settings
+  m_Name: Main Menu Btn Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 301295465}
   - component: {fileID: 301295464}
   m_Layer: 5
-  m_Name: Button restore default
+  m_Name: Btn restore default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 317178320}
   - component: {fileID: 317178319}
   m_Layer: 5
-  m_Name: Input Seed Animation
+  m_Name: Seed_animation Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -992,7 +992,7 @@ RectTransform:
   m_Children:
   - {fileID: 615482693}
   m_Father: {fileID: 682358859}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1224,7 +1224,7 @@ GameObject:
   - component: {fileID: 408447514}
   - component: {fileID: 408447513}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: Seed_animation Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1501,7 +1501,7 @@ GameObject:
   - component: {fileID: 451467675}
   - component: {fileID: 451467674}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 'Cost Dice Text '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2130,7 +2130,7 @@ GameObject:
   - component: {fileID: 586815983}
   - component: {fileID: 586815982}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Days_to_rescue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2266,7 +2266,7 @@ GameObject:
   - component: {fileID: 600760124}
   - component: {fileID: 600760123}
   m_Layer: 5
-  m_Name: Input Seed Level
+  m_Name: Seed_level Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2286,7 +2286,7 @@ RectTransform:
   m_Children:
   - {fileID: 260804269}
   m_Father: {fileID: 682358859}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2526,10 +2526,10 @@ RectTransform:
   - {fileID: 136819873}
   - {fileID: 1404443403}
   - {fileID: 1611175865}
-  - {fileID: 1616188762}
-  - {fileID: 682358859}
   - {fileID: 1004524678}
+  - {fileID: 1616188762}
   - {fileID: 942777666}
+  - {fileID: 682358859}
   - {fileID: 122333606}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2739,7 +2739,7 @@ GameObject:
   - component: {fileID: 668005376}
   - component: {fileID: 668005375}
   m_Layer: 5
-  m_Name: Input Seed Dices
+  m_Name: 'Seed_dices Input '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2991,15 +2991,15 @@ RectTransform:
   - {fileID: 586815981}
   - {fileID: 1190984295}
   - {fileID: 668005374}
-  - {fileID: 600760122}
-  - {fileID: 317178318}
   - {fileID: 1267711539}
+  - {fileID: 600760122}
   - {fileID: 1058415595}
+  - {fileID: 317178318}
   - {fileID: 408447512}
   - {fileID: 301295463}
   - {fileID: 58550963}
   m_Father: {fileID: 606637529}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3487,7 +3487,7 @@ GameObject:
   - component: {fileID: 773382191}
   - component: {fileID: 773382190}
   m_Layer: 5
-  m_Name: Input rescue
+  m_Name: Days_to_rescue Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3933,7 +3933,7 @@ GameObject:
   - component: {fileID: 942777668}
   - component: {fileID: 942777667}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Main Menu High Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3952,7 +3952,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 606637529}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4081,7 +4081,7 @@ GameObject:
   - component: {fileID: 947486898}
   - component: {fileID: 947486897}
   m_Layer: 5
-  m_Name: Input Cost Dice
+  m_Name: Cost Dice Input
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4526,7 +4526,7 @@ GameObject:
   - component: {fileID: 1004524680}
   - component: {fileID: 1004524679}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Main Menu Audio Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4545,7 +4545,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 606637529}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4663,7 +4663,7 @@ GameObject:
   - component: {fileID: 1004857533}
   - component: {fileID: 1004857536}
   m_Layer: 5
-  m_Name: Btn Play
+  m_Name: Main Menu Btn Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4736,7 +4736,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1004857536}
         m_TargetAssemblyTypeName: LoadScence, Assembly-CSharp
-        m_MethodName: foo
+        m_MethodName: Load
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4808,7 +4808,7 @@ GameObject:
   - component: {fileID: 1058415597}
   - component: {fileID: 1058415596}
   m_Layer: 5
-  m_Name: Text (TMP) (3)
+  m_Name: Seed_level Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4827,7 +4827,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 682358859}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5019,7 +5019,7 @@ GameObject:
   - component: {fileID: 1158145986}
   - component: {fileID: 1158145985}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Main Menu Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5094,7 +5094,7 @@ GameObject:
   - component: {fileID: 1190984295}
   - component: {fileID: 1190984296}
   m_Layer: 5
-  m_Name: Choose Seeds
+  m_Name: Choose_seeds Checkbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5317,7 +5317,7 @@ GameObject:
   - component: {fileID: 1267711541}
   - component: {fileID: 1267711540}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Seed_dices Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5336,7 +5336,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 682358859}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5590,7 +5590,7 @@ GameObject:
   - component: {fileID: 1404443405}
   - component: {fileID: 1404443404}
   m_Layer: 5
-  m_Name: Btn About
+  m_Name: Main Menu Btn About
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6382,6 +6382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -6431,7 +6432,7 @@ GameObject:
   - component: {fileID: 1611175867}
   - component: {fileID: 1611175866}
   m_Layer: 5
-  m_Name: Slider Audiu
+  m_Name: Main Menu Audio Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6536,7 +6537,7 @@ GameObject:
   - component: {fileID: 1616188762}
   - component: {fileID: 1616188763}
   m_Layer: 5
-  m_Name: Toggle Tutorial
+  m_Name: Main Menu Toggle Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6557,7 +6558,7 @@ RectTransform:
   - {fileID: 194779628}
   - {fileID: 1940984992}
   m_Father: {fileID: 606637529}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

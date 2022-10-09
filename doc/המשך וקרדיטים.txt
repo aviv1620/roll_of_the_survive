@@ -1,82 +1,22 @@
-גימורים:
-להוסיף טוטוריאל V
-ולידציה להגדרות
--מה קורה עם השחקן רושם אפס?
--מה קורה אם השחקן רוצה לשרוד יותר מ22 ימים?
+לעשות refactoring ולתאד בדייב בלוג
+https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 
-עיצובים:
-חשוב:
-לעצב מפה V
-לעצב לוגו וגם לשים היכן שרשום"yor logo hare" V
-לשים דמות ואיזה ואיזה אנימציה של ספינה בוערת. V
-להוסיף קרדיטים V
-
-
-לעצב את עמוד הitch.
-ולכתוב הערות
-
-פחות חשוב:
-לעצב את טפריט המאין מניו V
-לעצב את טפריטי המשחק(פאוס ניצחון והפסד) X
-
-
-
-נשאר:
-1)להוסיף קובייה V
-2)הודעות פופאפ(ניצחון,הפסד,פאוס) V
-3)מעבר יום
-
-
-https://azuna-pixels.itch.io/free-food-icons
-https://cobgoblin.itch.io/gameboy-tools-and-resources
-https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements
-http://riskylab.com/tilemap/#
-https://opengameart.org/content/tree-variations-from-jetrels-wood-tileset
-https://opengameart.org/content/16x16-animated-campfire
-https://opengameart.org/content/smoke-fire-animated-particle-16x16
-https://cooltext.com/
-
-
-לא בשימוש
-https://opengameart.org/content/tree-8
-https://opengameart.org/content/lpc-style-farm-animals
-https://opengameart.org/content/blue-button-set
-
-תחילת המשחק:
-6-wood
-6-food
-6-water
-slot-3 dice
-
-פונקציות:
-כפטור הוסף קובייה
-ניתן להוסיף עד 5 קוביות ביום
-במידה ולוחצים אליו מתווספת קובייה אבל נלקח בין 1 ל 3 מאחד המשאבים
-המחיר נקבע בתחילת כל יום
-
-
-
-היום הבא:
-מוסיף יום אבל לוקח בין אחד ל1 ל 6 מכל משאב
-מתים כאשר יש פחות מ-0
-מנצחים כאשר עובר 5 ימים.
-כשעוברים יום הערך של הקובייה משתנה
+לכתוב במאמר מה עשיתי עד עכשיו ומה שסימנתי(כל אחד טיפול בפני עצמו)
 
 
 
 
-מטרה: 
-לשרוד 5 ימים
-(ואז יש אפשרות לצאת או להמשיך לנסות להגיע למספר הכי גובוהה
+
+2)
+bed design:
+SettingsManager - duplication code
+Resource - to much responsibility
+slots panel - want Other design (ResAdderm,EventPointerUp,EventPointerDown,Dice,UiDiceManager)
 
 
-הגדרות:
-האם להפעיל טוטוריאל
--משאבים לקחת בין כמה לכמה
--כמות ימים לחילוץ
 
-seed קוביות
-seed שלבים
-seed אנימציות
+(אולי) ייכנס תחת הכותרת דברים קטנים
+4)
+ManagerDays המתנה לא תיקנית של שתי פריימים
 
-(אולי) איזה פרמטרים להתחיל את המשחק
+5)Counter - not single responsibility
