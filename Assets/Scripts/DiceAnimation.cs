@@ -7,6 +7,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Image))]
 public class DiceAnimation : MonoBehaviour
 {
+    public ManagerSettings managerSettings;
     public Sprite []sprites;
     public float timeBetweenFrame = 0.2f;
     private int seed;
@@ -19,7 +20,7 @@ public class DiceAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        seed = ManagerSettings.Seed_Animation;
+        seed = managerSettings.settingsGame.seedAnimation;
         image = GetComponent<Image>();
         myRandom = new System.Random(seed);
         LoadCard();
@@ -27,7 +28,7 @@ public class DiceAnimation : MonoBehaviour
 
     }
 
-    public void setFrame(int frame)//FIXME Resource call it
+    public void SetFrame(int frame)
     {
         image.sprite = sprites[frame];
     }

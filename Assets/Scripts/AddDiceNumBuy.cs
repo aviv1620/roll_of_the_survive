@@ -7,7 +7,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class AddDiceNumBuy : MonoBehaviour
 {
-    public Resource resource;
+    public Counter resourceCounter;
     public AddDiceNum addDiceNum;
     public ManagerSlots slotsManager;
 
@@ -19,7 +19,7 @@ public class AddDiceNumBuy : MonoBehaviour
         button.onClick.AddListener(OnBuy);
         UpdateInteractable();
         slotsManager.onChange.AddListener(UpdateInteractable);
-        resource.onChange.AddListener(UpdateInteractable);
+        resourceCounter.Listen(CounterUpdateValue);
     }
 
     private void OnEnable()
@@ -37,11 +37,16 @@ public class AddDiceNumBuy : MonoBehaviour
         }
 
         int num = addDiceNum.Num;
-        resource.Remove(num);
+        resourceCounter.Subtract(num);
         slotsManager.RollNewDice();
 
 
 
+    }
+
+    private void CounterUpdateValue(int value)
+    {
+        UpdateInteractable();
     }
 
     public void UpdateInteractable()
@@ -51,6 +56,6 @@ public class AddDiceNumBuy : MonoBehaviour
 
     private bool ValidationCanBuy()
     {        
-        return slotsManager.HaveEmptySlot() && resource.value >= addDiceNum.Num && addDiceNum.gameObject.activeSelf;
+        return slotsManager.HaveEmptySlot() && resourceCounter.value >= addDiceNum.Num && addDiceNum.gameObject.activeSelf;
     }
 }

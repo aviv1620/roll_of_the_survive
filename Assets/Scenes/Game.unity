@@ -652,6 +652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801c5fee4e08d31498ada52ad9d985c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerSettings: {fileID: 779244412}
   onlyIfPlay_Choose_Seeds: 0
 --- !u!222 &113030446
 CanvasRenderer:
@@ -1604,6 +1605,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1456784255}
     m_Modifications:
+    - target: {fileID: 1475098971946170373, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 1475098972021368909, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: resource
       value: 
@@ -1612,6 +1617,10 @@ PrefabInstance:
       propertyPath: slotsManager
       value: 
       objectReference: {fileID: 779244409}
+    - target: {fileID: 1475098972021368909, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 1894462395}
     - target: {fileID: 1475098972021368912, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1736,6 +1745,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 779244407}
+    - target: {fileID: 1475098973614541975, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 1475098973614541975, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: managerDiceLevel
       value: 
@@ -2377,6 +2390,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1456784255}
     m_Modifications:
+    - target: {fileID: 144280737113025678, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: cointPref
+      value: 
+      objectReference: {fileID: 4021804266926848829, guid: be58ff3ca92c6c241a0bce337a84a2bf, type: 3}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: loseReason
+      value: 'Died from thirst after {0} days. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: managerEnd
+      value: 
+      objectReference: {fileID: 779244411}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: holderRandomLevel
+      value: 
+      objectReference: {fileID: 779244407}
+    - target: {fileID: 3397834668831409178, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 4072724993166912722, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2494,6 +2527,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 779244407}
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: holderRandomLevel
+      value: 
+      objectReference: {fileID: 779244407}
+    - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -2520,7 +2557,7 @@ PrefabInstance:
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 530470776}
+      objectReference: {fileID: 0}
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2626,7 +2663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530470773}
   - component: {fileID: 530470775}
-  - component: {fileID: 530470776}
+  - component: {fileID: 530470777}
   - component: {fileID: 530470774}
   m_Layer: 5
   m_Name: Text Reason
@@ -2752,7 +2789,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530470772}
   m_CullTransparentMesh: 1
---- !u!114 &530470776
+--- !u!114 &530470777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2761,13 +2798,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 530470772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee1453f9a77592c45912132dc2e7191e, type: 3}
+  m_Script: {fileID: 11500000, guid: 45500045a6f439c43b9b56d2286f6d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayes: {fileID: 738668395}
-  foodReason: Died from starving after {0} days.
-  woodReason: 'Died from thirst after {0} days. '
-  waterReason: 'Died from hypothermia after {0} days. not enough wood to make fire. '
+  dayesCounter: {fileID: 738668396}
 --- !u!1001 &566670150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2783,6 +2817,10 @@ PrefabInstance:
       propertyPath: unSelectedSlot
       value: 
       objectReference: {fileID: 386260777}
+    - target: {fileID: 8827953379894614624, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953379894614629, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: parentcanves
       value: 
@@ -2800,6 +2838,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 851658973}
     - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 881721145}
+    - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817320641}
@@ -2811,6 +2853,10 @@ PrefabInstance:
       propertyPath: resource
       value: 
       objectReference: {fileID: 2108830402}
+    - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 2108830405}
     - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2907,10 +2953,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8827953380748801486, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: resource
       value: 
       objectReference: {fileID: 1217137031}
+    - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 1894462395}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3076,6 +3130,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 738668394}
+  - component: {fileID: 738668396}
+  - component: {fileID: 738668397}
   - component: {fileID: 738668395}
   m_Layer: 5
   m_Name: Days
@@ -3119,11 +3175,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3a50cbaf143e74294562b4f16cec03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
-  textTMP: {fileID: 776650250}
+  managerSettings: {fileID: 779244412}
   dayConteiner: {fileID: 1736644282}
   dayPref: {fileID: 4275861416298140118, guid: 79ca2fb618d62b046bf24e3620f24ecb, type: 3}
   dayPassPref: {fileID: 3344059784561901994, guid: c895988ac5e09554d94e3a7592c796b8, type: 3}
+--- !u!114 &738668396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738668393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f082eed8447304ba768e71ab695b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 1
+  EventChange:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &738668397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738668393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38b40b4731e1a443b4bab396d0b0ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textTMP: {fileID: 776650250}
 --- !u!1 &758162279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,6 +3501,8 @@ GameObject:
   - component: {fileID: 779244407}
   - component: {fileID: 779244409}
   - component: {fileID: 779244410}
+  - component: {fileID: 779244411}
+  - component: {fileID: 779244412}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3542,7 +3628,45 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  daysCounter: {fileID: 738668395}
+  daysCounter: {fileID: 738668396}
+--- !u!114 &779244411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779244406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff74db3798e935243af4f90413579688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popupObjs:
+  - {fileID: 36206685}
+  - {fileID: 1411975600}
+  endSaveHighScore: {fileID: 1411975604}
+  endDialogReason: {fileID: 530470777}
+--- !u!114 &779244412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779244406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb03349890ab5b54d868adf381b2ffc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingsGame:
+    playTutorial: 1
+    costDice: 3
+    daysToRecue: 5
+    playerChooseSeeds: 0
+    seedDices: 668512
+    seedLevel: 668513
+    seedAnimation: 668514
+  settingsDefault: {fileID: 11400000, guid: c730451aa7e674a48830919f8f213fff, type: 2}
 --- !u!1 &802793662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,6 +3895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffaaa3b2de93ff468b768f54ec59a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerSettings: {fileID: 779244412}
 --- !u!1 &821971892
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4323,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3fad2d3970bfb4e8e3d3b36ff044dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &881721145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2590132306704313554, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+  m_PrefabInstance: {fileID: 433736208}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f082eed8447304ba768e71ab695b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &914410261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,6 +4425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffaaa3b2de93ff468b768f54ec59a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerSettings: {fileID: 779244412}
 --- !u!1 &930470352
 GameObject:
   m_ObjectHideFlags: 0
@@ -4439,6 +4576,10 @@ PrefabInstance:
       propertyPath: unSelectedSlot
       value: 
       objectReference: {fileID: 386260777}
+    - target: {fileID: 8827953379894614624, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953379894614629, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: parentcanves
       value: 
@@ -4456,6 +4597,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 851658973}
     - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 881721145}
+    - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817320641}
@@ -4467,6 +4612,10 @@ PrefabInstance:
       propertyPath: resource
       value: 
       objectReference: {fileID: 2108830402}
+    - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 2108830405}
     - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4563,10 +4712,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8827953380748801486, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: resource
       value: 
       objectReference: {fileID: 1217137031}
+    - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 1894462395}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4664,6 +4821,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1456784255}
     m_Modifications:
+    - target: {fileID: 1475098971946170373, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 1475098972021368909, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: resource
       value: 
@@ -4672,6 +4833,10 @@ PrefabInstance:
       propertyPath: slotsManager
       value: 
       objectReference: {fileID: 779244409}
+    - target: {fileID: 1475098972021368909, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 881721145}
     - target: {fileID: 1475098972021368912, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4796,6 +4961,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 779244407}
+    - target: {fileID: 1475098973614541975, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 1475098973614541975, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: managerDiceLevel
       value: 
@@ -4949,6 +5118,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1456784255}
     m_Modifications:
+    - target: {fileID: 144280737113025678, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: cointPref
+      value: 
+      objectReference: {fileID: 4021804266926848829, guid: e8664377ba4df62449deab4a1ca13cf8, type: 3}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: loseReason
+      value: Died from hypothermia after {0} days. not enough wood to make fire.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: managerEnd
+      value: 
+      objectReference: {fileID: 779244411}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: holderRandomLevel
+      value: 
+      objectReference: {fileID: 779244407}
+    - target: {fileID: 3397834668831409178, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 4072724993166912722, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5066,6 +5255,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 779244407}
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: holderRandomLevel
+      value: 
+      objectReference: {fileID: 779244407}
+    - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -5092,7 +5285,7 @@ PrefabInstance:
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 530470776}
+      objectReference: {fileID: 0}
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -5413,8 +5606,9 @@ GameObject:
   - component: {fileID: 1411975601}
   - component: {fileID: 1411975603}
   - component: {fileID: 1411975602}
+  - component: {fileID: 1411975604}
   m_Layer: 5
-  m_Name: Lose
+  m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5482,6 +5676,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411975600}
   m_CullTransparentMesh: 1
+--- !u!114 &1411975604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411975600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef93f333d2722b74b9d8906d90340012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayesCounter: {fileID: 738668396}
 --- !u!1 &1417549180
 GameObject:
   m_ObjectHideFlags: 0
@@ -6113,6 +6320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38de885ada7af6429af0fdb1a8f12da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerSettings: {fileID: 779244412}
 --- !u!1 &1566868414
 GameObject:
   m_ObjectHideFlags: 0
@@ -6521,6 +6729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffaaa3b2de93ff468b768f54ec59a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerSettings: {fileID: 779244412}
 --- !u!1 &1642104128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6752,6 +6961,10 @@ PrefabInstance:
       propertyPath: unSelectedSlot
       value: 
       objectReference: {fileID: 386260777}
+    - target: {fileID: 8827953379894614624, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953379894614629, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: parentcanves
       value: 
@@ -6769,6 +6982,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 851658973}
     - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 881721145}
+    - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817320641}
@@ -6780,6 +6997,10 @@ PrefabInstance:
       propertyPath: resource
       value: 
       objectReference: {fileID: 2108830402}
+    - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 2108830405}
     - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6876,10 +7097,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8827953380748801486, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: resource
       value: 
       objectReference: {fileID: 1217137031}
+    - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 1894462395}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7105,6 +7334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801c5fee4e08d31498ada52ad9d985c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerSettings: {fileID: 779244412}
   onlyIfPlay_Choose_Seeds: 1
 --- !u!1 &1772729044
 GameObject:
@@ -7384,6 +7614,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1894462395 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2590132306704313554, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+  m_PrefabInstance: {fileID: 1217137029}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f082eed8447304ba768e71ab695b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1957328417 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1475098972021368908, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
@@ -7724,6 +7965,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3fad2d3970bfb4e8e3d3b36ff044dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2108830405 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2590132306704313554, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+  m_PrefabInstance: {fileID: 4072724992990514360}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f082eed8447304ba768e71ab695b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1475098971567850428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7731,6 +7983,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1456784255}
     m_Modifications:
+    - target: {fileID: 1475098971946170373, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 1475098972021368909, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: resource
       value: 
@@ -7739,6 +7995,10 @@ PrefabInstance:
       propertyPath: slotsManager
       value: 
       objectReference: {fileID: 779244409}
+    - target: {fileID: 1475098972021368909, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 2108830405}
     - target: {fileID: 1475098972021368912, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7864,6 +8124,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 779244407}
     - target: {fileID: 1475098973614541975, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
+    - target: {fileID: 1475098973614541975, guid: d7ca87875716fdb4494eef1a43753303, type: 3}
       propertyPath: managerDiceLevel
       value: 
       objectReference: {fileID: 779244407}
@@ -7876,6 +8140,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1456784255}
     m_Modifications:
+    - target: {fileID: 144280737113025678, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: cointPref
+      value: 
+      objectReference: {fileID: 4021804266926848829, guid: abf7626b891bec24394aa31571f23e7f, type: 3}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: loseReason
+      value: Died from starving after {0} days.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: managerEnd
+      value: 
+      objectReference: {fileID: 779244411}
+    - target: {fileID: 1606654152777871564, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: holderRandomLevel
+      value: 
+      objectReference: {fileID: 779244407}
+    - target: {fileID: 3397834668831409178, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 4072724993166912722, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7989,6 +8273,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 779244407}
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
+      propertyPath: holderRandomLevel
+      value: 
+      objectReference: {fileID: 779244407}
+    - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 36206685}
@@ -7999,7 +8287,7 @@ PrefabInstance:
     - target: {fileID: 4072724994797092474, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
       propertyPath: onLose.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 530470776}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d67a27c244a36e4db20d78ba512299a, type: 3}
 --- !u!1001 &8827953380537899408
@@ -8017,6 +8305,10 @@ PrefabInstance:
       propertyPath: unSelectedSlot
       value: 
       objectReference: {fileID: 386260777}
+    - target: {fileID: 8827953379894614624, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953379894614629, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: parentcanves
       value: 
@@ -8034,6 +8326,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 851658973}
     - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 881721145}
+    - target: {fileID: 8827953379910304909, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817320641}
@@ -8041,6 +8337,10 @@ PrefabInstance:
       propertyPath: resource
       value: 
       objectReference: {fileID: 2108830402}
+    - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 2108830405}
     - target: {fileID: 8827953380276001126, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8133,10 +8433,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8827953380748801486, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: managerSettings
+      value: 
+      objectReference: {fileID: 779244412}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: resource
       value: 
       objectReference: {fileID: 1217137031}
+    - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: resourceCounter
+      value: 
+      objectReference: {fileID: 1894462395}
     - target: {fileID: 8827953381134893981, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: drop.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

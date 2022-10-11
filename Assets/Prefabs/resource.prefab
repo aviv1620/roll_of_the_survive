@@ -569,6 +569,11 @@ GameObject:
   - component: {fileID: 4072724994797092359}
   - component: {fileID: 4072724994797092473}
   - component: {fileID: 4072724994797092472}
+  - component: {fileID: 144280737113025678}
+  - component: {fileID: 8266907268652067657}
+  - component: {fileID: 2590132306704313554}
+  - component: {fileID: 502504002190888070}
+  - component: {fileID: 1606654152777871564}
   - component: {fileID: 4072724994797092474}
   m_Layer: 5
   m_Name: resource
@@ -641,6 +646,79 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &144280737113025678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4072724994797092358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec7bce8cb68e34597c4a4f6865a765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cointConteiner: {fileID: 4072724994092336099}
+  cointPref: {fileID: 4021804266926848829, guid: beed42f2f4957c445b13e9102a4d08a6, type: 3}
+--- !u!114 &8266907268652067657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4072724994797092358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38b40b4731e1a443b4bab396d0b0ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textTMP: {fileID: 4072724994642445266}
+--- !u!114 &2590132306704313554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4072724994797092358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f082eed8447304ba768e71ab695b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 6
+  EventChange:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &502504002190888070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4072724994797092358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d6c0bf3535c774190c885f95dd3ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dice: {fileID: 5777679948873995126}
+  msgTemporary: {fileID: 2511640674708607736}
+  time: 0.5
+--- !u!114 &1606654152777871564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4072724994797092358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ac9ba1c9840ac40847a00b773b25f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loseReason: 
+  managerEnd: {fileID: 0}
+  holderRandomLevel: {fileID: 0}
 --- !u!114 &4072724994797092474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,56 +731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3fad2d3970bfb4e8e3d3b36ff044dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 6
-  textTMP: {fileID: 4072724994642445266}
-  cointConteiner: {fileID: 4072724994092336099}
-  cointPref: {fileID: 4021804266926848829, guid: abf7626b891bec24394aa31571f23e7f, type: 3}
-  onChange:
-    m_PersistentCalls:
-      m_Calls: []
-  onLose:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LoseReason, Assembly-CSharp
-        m_MethodName: Food
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  Dice: {fileID: 0}
-  timeRoll: 0.5
-  managerDiceLevel: {fileID: 0}
-  msgTemporary: {fileID: 0}
 --- !u!1 &5777679948873995126
 GameObject:
   m_ObjectHideFlags: 0

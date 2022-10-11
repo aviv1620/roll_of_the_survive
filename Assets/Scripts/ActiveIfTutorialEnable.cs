@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ActiveIfTutorialEnable : MonoBehaviour
 {
-   
+    public ManagerSettings managerSettings;
+
     void Start()
     {
-        gameObject.SetActive(ManagerSettings.Play_Tutorial);
+        gameObject.SetActive(managerSettings.settingsGame.playTutorial);
     }
 
    

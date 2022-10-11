@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(ManagerSettings))]
 public class HolderRandomLevel : MonoBehaviour
-{
-
+{   
     private System.Random _myRandom;
 
     public System.Random MyRandom { get => _myRandom; }
 
-    private void Awake()
+    private void Start()
     {
-        _myRandom = new System.Random(ManagerSettings.Seed_Level);
+        ManagerSettings managerSettings = GetComponent<ManagerSettings>();
+        _myRandom = new System.Random(managerSettings.settingsGame.seedLevel);
     }
 }

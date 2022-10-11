@@ -6,6 +6,8 @@ using TMPro;
 
 public class AddDiceNum : MonoBehaviour
 {
+    public ManagerSettings managerSettings;
+
     public HolderRandomLevel gameManager;
     public TMP_Text label;
 
@@ -16,7 +18,7 @@ public class AddDiceNum : MonoBehaviour
     private void OnEnable()
     {
         System.Random myRandom = gameManager.MyRandom;
-        _num = myRandom.Next(ManagerSettings.Cost_Dice);
+        _num = myRandom.Next(managerSettings.settingsGame.costDice);
         _num++;        
         label.text = "-" + _num;
     }

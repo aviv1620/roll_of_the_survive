@@ -2539,64 +2539,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &615382824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 615382826}
-  - component: {fileID: 615382825}
-  m_Layer: 0
-  m_Name: ManuManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &615382825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615382824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c55952c1cd0073b4c826ec2f171fa457, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  default_Play_Tutorial: 0
-  default_Cost_Dice: 0
-  default_Days_To_Recue: 0
-  default_Play_Choose_Seeds: 0
-  default_Seed_Dices: 0
-  default_Seed_Level: 0
-  default_Seed_Animation: 0
-  toggleTutorial: {fileID: 1616188763}
-  CostDice: {fileID: 947486897}
-  DayesRescue: {fileID: 773382190}
-  chooseSeeds: {fileID: 1190984296}
-  seedDices: {fileID: 668005375}
-  seedLevel: {fileID: 600760123}
-  seedAnimation: {fileID: 317178319}
---- !u!4 &615382826
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615382824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 707.6301, y: 424.993, z: -0.008999348}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615482692
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,6 +6051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1541442830}
   - component: {fileID: 1541442831}
+  - component: {fileID: 1541442832}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -6143,6 +6086,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb03349890ab5b54d868adf381b2ffc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingsGame:
+    playTutorial: 1
+    costDice: 3
+    daysToRecue: 5
+    playerChooseSeeds: 0
+    seedDices: 668512
+    seedLevel: 668513
+    seedAnimation: 668514
+  settingsDefault: {fileID: 11400000, guid: c730451aa7e674a48830919f8f213fff, type: 2}
+--- !u!114 &1541442832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541442829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55952c1cd0073b4c826ec2f171fa457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiToggleTutorial: {fileID: 1616188763}
+  uiInputCostDice: {fileID: 947486897}
+  uiInputDayesRescue: {fileID: 773382190}
+  uiChooseSeeds: {fileID: 1190984296}
+  uiInputSeedDices: {fileID: 668005375}
+  uiInputSeedLevel: {fileID: 600760123}
+  uiInputSeedAnimation: {fileID: 317178319}
+  uiBtnRestoreDefault: {fileID: 301295464}
 --- !u!1 &1549776690
 GameObject:
   m_ObjectHideFlags: 0

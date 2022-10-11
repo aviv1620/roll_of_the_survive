@@ -4,28 +4,44 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ManagerSettings : MonoBehaviour
-{
-    public static bool Play_Tutorial = true;
-    public static int Cost_Dice = 3;
-    public static int Days_To_Recue = 5;
+{    
+    private static readonly string settingsGameKey = "settings";
 
-    public static bool Play_Choose_Seeds = false;
+    [HideInInspector]
+    public SettingsGame settingsGame;
 
-    public static int Seed_Dices = 668512;
-    public static int Seed_Level = 668513;
-    public static int Seed_Animation = 668514;
-
-    
+    public SettingsGameScriptableObject settingsDefault;
 
     void Awake()
     {
-        System.Random rnd = new System.Random();
-
-        Seed_Dices = rnd.Next();
-        Seed_Level = rnd.Next();
-        Seed_Animation = rnd.Next();
-        UnityEngine.Object.DontDestroyOnLoad(this.gameObject);
+        Load();
     }
+
+    private void Load()
+    {
+        string settingsGameDefaultJson = JsonUtility.ToJson(settingsDefault.settingsGame);
+        string settingsGameJson = PlayerPrefs.GetString(settingsGameKey, settingsGameDefaultJson);
+
+        settingsGame = JsonUtility.FromJson<SettingsGame>(settingsGameJson);
+    }
+
+
+    public void RestoreDefault()
+    {
+        string settingsGameDefaultJson = JsonUtility.ToJson(settingsDefault.settingsGame);
+        PlayerPrefs.SetString(settingsGameKey, settingsGameDefaultJson);
+        Load();
+    }
+
+    public void Save(SettingsGame _settingsGame)
+    {
+        settingsGame = _settingsGame;
+        string settingsGameJson = JsonUtility.ToJson(settingsGame);
+        PlayerPrefs.SetString(settingsGameKey, settingsGameJson);
+
+    }
+
+   
 
 
 

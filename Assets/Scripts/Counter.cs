@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
-public abstract class Counter : MonoBehaviour
+public class Counter : MonoBehaviour
 {
     public int value = 6;
-    
+
+    [HideInInspector]
+    public UnityEvent<int> EventChange;
+
     private void Start()
     {
-        updateValue();
+        UpdateValue();
     }
     
-    public void Remove(int value)
+    public void Subtract(int value)
     {
         Add(-1 * value);      
     }
@@ -20,9 +24,18 @@ public abstract class Counter : MonoBehaviour
     public void Add(int value)
     {
         this.value += value;
-        updateValue();
+        UpdateValue();
+    }
+
+    public void Listen(UnityAction<int> call)
+    {
+        EventChange.AddListener(call);
+        EventChange.Invoke(value);
     }
 
 
-    protected abstract void updateValue();
+    private void UpdateValue()
+    {       
+        EventChange.Invoke(value);
+    }
 }

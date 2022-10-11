@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Days : CounterTMP
+[RequireComponent(typeof(Counter))]
+public class Days : MonoBehaviour
 {
+    public ManagerSettings managerSettings;
+
     public Transform dayConteiner;
     public GameObject dayPref;
     public GameObject dayPassPref;
 
-    protected override void updateValue()
+    void Start()
     {
-        base.updateValue();
+        Counter counter = GetComponent<Counter>();
+        counter.Listen(UpdateValue);
+    }
 
-        int recue = ManagerSettings.Days_To_Recue;    
+    private void UpdateValue(int value)
+    {        
+
+        int recue = managerSettings.settingsGame.daysToRecue;    
 
         //destory all coints
         foreach (Transform child in dayConteiner)

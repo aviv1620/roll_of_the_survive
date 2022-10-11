@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public abstract class CounterTMP : Counter
+[RequireComponent(typeof(Counter))]
+public class CounterTMP : MonoBehaviour
 {
+
+    private void Start()
+    {
+        Counter counter = GetComponent<Counter>();
+        counter.Listen(UpdateValue);
+    }
 
     public TMP_Text textTMP;
 
-    protected override void updateValue()
+    private void UpdateValue(int value)
     {
         textTMP.text = value.ToString();
     }

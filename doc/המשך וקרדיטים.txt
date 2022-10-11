@@ -1,16 +1,16 @@
 לעשות refactoring ולתאד בדייב בלוג
 https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 
-לכתוב במאמר מה עשיתי עד עכשיו ומה שסימנתי(כל אחד טיפול בפני עצמו)
 
-
+להסביר את הגישה והבעייתיות שבManagerSettings לפני ריפקטור
+(אולי הפעם להשמתמש בUML)
 
 
 
 2)
 bed design:
 SettingsManager - duplication code
-Resource - to much responsibility
+Resource - to much responsibility V
 slots panel - want Other design (ResAdderm,EventPointerUp,EventPointerDown,Dice,UiDiceManager)
 
 

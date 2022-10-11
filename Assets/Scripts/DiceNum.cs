@@ -8,6 +8,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Image))]
 public class DiceNum : MonoBehaviour
 {
+    public ManagerSettings managerSettings;
 
     private static System.Random myRandom;
     public Sprite[] sprites;
@@ -21,7 +22,7 @@ public class DiceNum : MonoBehaviour
     {
         //roll
         if (myRandom == null)
-            myRandom = new System.Random(ManagerSettings.Seed_Dices);
+            myRandom = new System.Random(managerSettings.settingsGame.seedDices);
 
         int index = myRandom.Next(sprites.Length);
 

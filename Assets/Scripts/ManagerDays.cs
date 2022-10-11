@@ -4,28 +4,30 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(ManagerSlots))]
+[RequireComponent(typeof(ManagerSettings))]
 public class ManagerDays : MonoBehaviour
 {
-
+    private ManagerSettings managerSettings;
     private ManagerSlots slotsManager;
 
     public AddDiceRoll diceFood;
     public AddDiceRoll diceWood;
     public AddDiceRoll diceWater;
 
-    public Resource resFood;
-    public Resource resWood;
-    public Resource resWater;
+    public ManagerSingleResource resFood;
+    public ManagerSingleResource resWood;
+    public ManagerSingleResource resWater;
 
     public UnityEvent onNight;
     public UnityEvent onDay;
     public UnityEvent onWin;
 
-    public Days daysCounter;
+    public Counter daysCounter;
 
   
     void Start()
     {
+        managerSettings = GetComponent<ManagerSettings>();
         slotsManager = GetComponent<ManagerSlots>();
         FirstDay();
     }    
@@ -71,7 +73,7 @@ public class ManagerDays : MonoBehaviour
         onDay.Invoke();
 
         daysCounter.Add(1);
-        if(daysCounter.value == ManagerSettings.Days_To_Recue)
+        if(daysCounter.value == managerSettings.settingsGame.daysToRecue)
             onWin.Invoke();
 
         

@@ -5,11 +5,13 @@ using TMPro;
 
 [RequireComponent(typeof(TMP_Text))]
 public class SettingsOnUi : MonoBehaviour
-{  
+{
+    public ManagerSettings managerSettings;
+
     void Start()
     {
         TMP_Text label = GetComponent<TMP_Text>();
-        label.text = string.Format(label.text, ManagerSettings.Cost_Dice, ManagerSettings.Days_To_Recue);
+        label.text = string.Format(label.text, managerSettings.settingsGame.costDice, managerSettings.settingsGame.daysToRecue);
     }
    
 }

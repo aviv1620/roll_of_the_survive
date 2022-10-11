@@ -15,7 +15,7 @@ public class ResAdder : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
     public TMP_Text label;
     private int vlaue;
-    public Resource resource;
+    public Counter resourceCounter;
 
 
     private void OnEnable()
@@ -33,7 +33,7 @@ public class ResAdder : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
             Debug.Log("Dropped object was: " + data.pointerDrag);
         }*/
 
-        resource.Add(vlaue);
+        resourceCounter.Add(vlaue);
         ManagerSlotSingle slotManager = GetComponentInParent<ManagerSlotSingle>();
         slotManager.Occupied();
 
