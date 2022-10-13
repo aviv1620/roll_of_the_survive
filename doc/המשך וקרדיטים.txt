@@ -2,7 +2,7 @@
 https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 
 1)לפרסום בגיטהיב
--לעלות רישיות GPL
+-לעלות רישיות GPL V
 -לכתוב readme
 --הנחיות להורדת הקובץ
 --פריפיקס
@@ -15,3 +15,5 @@ https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 4)לצרף לינק מitch לgithub
 
 5)לשפר את הגראםיקה
+
+6)לשים תמונה ברידמי
