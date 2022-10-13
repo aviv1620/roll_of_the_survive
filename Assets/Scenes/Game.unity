@@ -2778,6 +2778,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: tutorial
+      value: 
+      objectReference: {fileID: 817320641}
+    - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: canvasFloatingUi
       value: 
       objectReference: {fileID: 1451892817}
@@ -4564,6 +4568,10 @@ PrefabInstance:
       propertyPath: unSelectedSlot
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: tutorial
+      value: 
+      objectReference: {fileID: 817320641}
     - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: canvasFloatingUi
       value: 
@@ -7036,6 +7044,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: tutorial
+      value: 
+      objectReference: {fileID: 817320641}
+    - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: canvasFloatingUi
       value: 
       objectReference: {fileID: 1451892817}
@@ -8432,6 +8444,10 @@ PrefabInstance:
       propertyPath: unSelectedSlot
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
+      propertyPath: tutorial
+      value: 
+      objectReference: {fileID: 817320641}
     - target: {fileID: 7854335911271807193, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: canvasFloatingUi
       value: 

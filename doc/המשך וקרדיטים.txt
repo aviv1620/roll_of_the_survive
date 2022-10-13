@@ -1,45 +1,17 @@
 לעשות refactoring ולתאד בדייב בלוג
 https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 
+1)לפרסום בגיטהיב
+-לעלות רישיות GPL
+-לכתוב readme
+--הנחיות להורדת הקובץ
+--פריפיקס
+--לינק לעמוד בitch
 
-https://answers.unity.com/questions/1104095/raycasting-through-ui-image-with-transparent-part.html
+2)לתת למישהו לעבור על הקוד
 
-להבין איך רואים מתיוכאשר הסמן על החצי עיגול הזה V
+3) לצרף את שתי הקבצים, של הליפני ושל האחרי.
 
+4)לצרף לינק מitch לgithub
 
-.....
-לכתוב על קשיים
-(אולי) הפתרון הלא מוצלח עם להשתמש בimage filled הפתרון הלא מוצלח
-
-.....
-
-כל האילטורים שעשיתי ברגע האחון
-*הפתרון הזמני של מעבר בין אובייקטים כדי שהעיגול לא יופיע מעל
-*שהעגול בתוך אובייקטי.
-*הכניקה לא resble
-
-.....
-למחוק
-ManagerDiceUi
-Dice
-ResAdder
-EventPointerUp
-EventPointerDown
-
-......
-
-
-
-2)
-bed design:
-SettingsManager - duplication code
-Resource - to much responsibility V
-slots panel - want Other design (ResAdderm,EventPointerUp,EventPointerDown,Dice,UiDiceManager)
-
-
-
-(אולי) ייכנס תחת הכותרת דברים קטנים
-4)
-ManagerDays המתנה לא תיקנית של שתי פריימים
-
-5)Counter - not single responsibility
+5)לשפר את הגראםיקה

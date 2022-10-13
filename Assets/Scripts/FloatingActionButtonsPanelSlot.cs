@@ -5,9 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(DiceNum))]
 public class FloatingActionButtonsPanelSlot : FloatingActionButtonsPanel
 {
+    public GameObject tutorial;
 
     public List<ResourceFloatingActionHolder> resources;
-
+   
     private DiceNum diceNum;
     void Start()
     {
@@ -41,11 +42,16 @@ public class FloatingActionButtonsPanelSlot : FloatingActionButtonsPanel
     {
         int value = diceNum.Num;
 
+        //add resources
         resources[index].Add(value);
 
+        //make dice Occupied
         ManagerSingleSlot slotManager = GetComponentInParent<ManagerSingleSlot>();
         slotManager.Occupied();
-}
+
+        //Deactive tutorial.
+        tutorial.SetActive(false);
+    }
 
 
 }
