@@ -24,9 +24,10 @@ public class SlotSwitch : MonoBehaviour
 
 
     public void SwitchTo(SlotMode mode)
-    {
+    {       
         switch (mode)
         {
+            
             case SlotMode.anim:
                 EnableOne(anim);
                 break;

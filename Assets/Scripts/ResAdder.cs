@@ -34,7 +34,7 @@ public class ResAdder : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         }*/
 
         resourceCounter.Add(vlaue);
-        ManagerSlotSingle slotManager = GetComponentInParent<ManagerSlotSingle>();
+        ManagerSingleSlot slotManager = GetComponentInParent<ManagerSingleSlot>();
         slotManager.Occupied();
 
         drop.Invoke();

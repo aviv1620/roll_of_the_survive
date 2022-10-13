@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SlotSwitch))]
-public class ManagerSlotSingle : MonoBehaviour
+public class ManagerSingleSlot : MonoBehaviour
 {
 
     private SlotSwitch slotSwitch;

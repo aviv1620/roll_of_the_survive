@@ -2,8 +2,31 @@
 https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 
 
-להסביר את הגישה והבעייתיות שבManagerSettings לפני ריפקטור
-(אולי הפעם להשמתמש בUML)
+https://answers.unity.com/questions/1104095/raycasting-through-ui-image-with-transparent-part.html
+
+להבין איך רואים מתיוכאשר הסמן על החצי עיגול הזה V
+
+
+.....
+לכתוב על קשיים
+(אולי) הפתרון הלא מוצלח עם להשתמש בimage filled הפתרון הלא מוצלח
+
+.....
+
+כל האילטורים שעשיתי ברגע האחון
+*הפתרון הזמני של מעבר בין אובייקטים כדי שהעיגול לא יופיע מעל
+*שהעגול בתוך אובייקטי.
+*הכניקה לא resble
+
+.....
+למחוק
+ManagerDiceUi
+Dice
+ResAdder
+EventPointerUp
+EventPointerDown
+
+......
 
 
 

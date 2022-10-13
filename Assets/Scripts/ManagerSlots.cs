@@ -12,7 +12,7 @@ public class ManagerSlots : MonoBehaviour
     public UnityEvent onChange;
 
     [HideInInspector]
-    public ManagerSlotSingle[] slotsManager;
+    public ManagerSingleSlot[] slotsManager;
 
 
 
@@ -35,14 +35,14 @@ public class ManagerSlots : MonoBehaviour
 
     private void StartInsertAndListenSlotsManager(GameObject[] slots)
     {
-        slotsManager = new ManagerSlotSingle[NumSlots];
+        slotsManager = new ManagerSingleSlot[NumSlots];
 
         for (int i = 0; i < slots.Length; i++)
         {
             GameObject slot = slots[i];
             SlotSwitch slotSwitch = slot.GetComponentInParent<SlotSwitch>();
             slotSwitch.onChange.AddListener(onSlotChange);
-            slotsManager[i] = slot.GetComponentInParent<ManagerSlotSingle>();
+            slotsManager[i] = slot.GetComponentInParent<ManagerSingleSlot>();
         }
     }
 
@@ -52,9 +52,9 @@ public class ManagerSlots : MonoBehaviour
         return GameObject.FindGameObjectsWithTag(TagEmpty).Length > 0;
     }
 
-    private ManagerSlotSingle FindEmptySlot()
+    private ManagerSingleSlot FindEmptySlot()
     {
-        return GameObject.FindGameObjectWithTag(TagEmpty).GetComponentInParent<ManagerSlotSingle>();
+        return GameObject.FindGameObjectWithTag(TagEmpty).GetComponentInParent<ManagerSingleSlot>();
     }
 
     public void RollNewDice()
@@ -65,13 +65,13 @@ public class ManagerSlots : MonoBehaviour
             return;
         }
         
-        ManagerSlotSingle emptySlot = FindEmptySlot();
+        ManagerSingleSlot emptySlot = FindEmptySlot();
         emptySlot.RollNewDice();        
     }
 
     public void ClearOccupied()
     {
-        foreach(ManagerSlotSingle slot in slotsManager)
+        foreach(ManagerSingleSlot slot in slotsManager)
         {
             slot.ClearOccupied();
         }
@@ -79,7 +79,7 @@ public class ManagerSlots : MonoBehaviour
 
     public void ReRoll()
     {
-        foreach (ManagerSlotSingle slot in slotsManager)
+        foreach (ManagerSingleSlot slot in slotsManager)
         {
             slot.ReRoll();
         }
