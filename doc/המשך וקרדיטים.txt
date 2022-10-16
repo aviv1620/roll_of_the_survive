@@ -1,12 +1,7 @@
 לעשות refactoring ולתאד בדייב בלוג
 https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 
-1)לפרסום בגיטהיב
--לעלות רישיות GPL V
--לכתוב readme
---הנחיות להורדת הקובץ
---פריפיקס
---לינק לעמוד בitch
+1)לפרסום בגיטהיב V
 
 2)לתת למישהו לעבור על הקוד
 
@@ -17,3 +12,5 @@ https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
 5)לשפר את הגראםיקה
 
 6)לשים תמונה ברידמי
+
+7)לשים אותו בעמוד הראשי של פרופיל הgithub שלי
