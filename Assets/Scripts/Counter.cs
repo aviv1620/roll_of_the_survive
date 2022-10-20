@@ -18,7 +18,7 @@ public class Counter : MonoBehaviour
     
     public void Subtract(int value)
     {
-        Add(-1 * value);      
+        Add(-value);      
     }
 
     public void Add(int value)
@@ -32,7 +32,6 @@ public class Counter : MonoBehaviour
         EventChange.AddListener(call);
         EventChange.Invoke(value);
     }
-
 
     private void UpdateValue()
     {       

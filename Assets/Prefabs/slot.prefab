@@ -63,7 +63,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   managerSettings: {fileID: 0}
-  sprites:
+  dieFacesImages:
+  - {fileID: 21300000, guid: e2d09f2ce05950c4b981e629a140f772, type: 3}
   - {fileID: 21300000, guid: 2d9011c4ff72fd04b8b3278fce96f4ac, type: 3}
   - {fileID: 21300000, guid: 66052a805e5dc684c84c817ba276c6f4, type: 3}
   - {fileID: 21300000, guid: cf8757a1df7373c4e99d14d85b500f6b, type: 3}
@@ -84,6 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelPref: {fileID: 3018754139914095914, guid: 96d7892d11be377498f5c95c65f937a4, type: 3}
   canvasFloatingUi: {fileID: 0}
+  tutorial: {fileID: 0}
   resources: []
 --- !u!114 &8827953379894614654
 MonoBehaviour:

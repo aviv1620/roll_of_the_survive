@@ -2927,7 +2927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -315
+      value: -310
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3491,10 +3491,10 @@ GameObject:
   m_Component:
   - component: {fileID: 779244408}
   - component: {fileID: 779244407}
-  - component: {fileID: 779244409}
   - component: {fileID: 779244410}
   - component: {fileID: 779244411}
   - component: {fileID: 779244412}
+  - component: {fileID: 779244409}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3541,6 +3541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8175d894b6283f4fbddcd57a79d63c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumSlots: 4
   onChange:
     m_PersistentCalls:
       m_Calls: []
@@ -3554,45 +3555,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 779244406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef832d0b7066c734791c57079d8446df, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d897b441f4b18e4cb4d0c563a3077d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diceFood: {fileID: 456666096}
-  diceWood: {fileID: 1957328417}
-  diceWater: {fileID: 1800544188}
+  addDiceFood: {fileID: 456666096}
+  addDiceWood: {fileID: 1957328417}
+  addDiceWater: {fileID: 1800544188}
   resFood: {fileID: 2108830402}
   resWood: {fileID: 1217137031}
   resWater: {fileID: 851658973}
-  onNight:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1603084663}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  onDay:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1603084663}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onWin:
     m_PersistentCalls:
       m_Calls:
@@ -3621,6 +3592,9 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   daysCounter: {fileID: 738668396}
+  darkness: {fileID: 1603084663}
+  popupCanvas: {fileID: 36206685}
+  popupWindowWin: {fileID: 1094695977}
 --- !u!114 &779244411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4710,7 +4684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 127.000015
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7185,7 +7159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -103
+      value: -91
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -8586,7 +8560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 352
+      value: 339
       objectReference: {fileID: 0}
     - target: {fileID: 8827953380599194633, guid: 171987a0e8fba1b46aa4f80aa8f4ae63, type: 3}
       propertyPath: m_AnchoredPosition.y

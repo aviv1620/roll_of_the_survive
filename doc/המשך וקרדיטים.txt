@@ -1,19 +1,27 @@
-לעשות refactoring ולתאד בדייב בלוג
-https://github.com/stillwwater/UnityStyleGuide#directory-file-structure
+**הנחיות לדייבלוג ולהצגת הקוד בגיטהיב נמצאות בענף main
 
-1)לפרסום בגיטהיב
--לעלות רישיות GPL V
--לכתוב readme
---הנחיות להורדת הקובץ
---פריפיקס
---לינק לעמוד בitch
+-Vלבטל טוטוריאל(מחשבה) בוא נבטל את זה.בJAM אנשים כן הבינו V
+-לתקן את הקוד
+*לקרוא על סידור תיקיות של Infallible
+*סיכום של עוד הערות של טל בתיקייה not_upload
+-לשפר דראפיקה
 
-2)לתת למישהו לעבור על הקוד
+reusble
+game
+-slots
+-resources
+-addDieButton
+settings
+-mainMenu
 
-3) לצרף את שתי הקבצים, של הליפני ושל האחרי.
 
-4)לצרף לינק מitch לgithub
 
-5)לשפר את הגראםיקה
+-לרשום מוסכמות ב(convention )
+מחלקות:
+manager נמצא פעם אחת בצאנה
+managerSingle נמצא בשורש של פריפב
+מתודות:
+Script רץ סינכרוני. לא מקיים SOLID כדי לקיים KISS
 
-6)לשים תמונה ברידמי
+
+

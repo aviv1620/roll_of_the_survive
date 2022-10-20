@@ -6,7 +6,9 @@ using UnityEngine.Events;
 public class ManagerSlots : MonoBehaviour
 {
     private readonly string TagEmpty = "EmptySlot";
-    private readonly int NumSlots = 4;
+    public int NumSlots = 4;
+
+
 
     [HideInInspector]
     public UnityEvent onChange;

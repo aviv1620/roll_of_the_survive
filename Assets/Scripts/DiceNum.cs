@@ -3,36 +3,36 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Random = System.Random;
 
 [RequireComponent(typeof(Image))]
 public class DiceNum : MonoBehaviour
 {
     public ManagerSettings managerSettings;
 
-    private static System.Random myRandom;
-    public Sprite[] sprites;
-    private int _num;
+    private static Random random;
+    public Sprite[] dieFacesImages;
+    private int dieValue;
 
-    public int Num { get => _num; }
-
-    
+    public int DieValue { get => dieValue; }
 
     private void OnEnable()
     {
-        //roll
-        if (myRandom == null)
-            myRandom = new System.Random(managerSettings.settingsGame.seedDices);
-
-        int index = myRandom.Next(sprites.Length);
-
-        Image image = GetComponent<Image>();
-        image.sprite = sprites[index];
-
-        _num = index + 1;
-
+        RandomizeDieValue();
     }
 
+    private void RandomizeDieValue()
+    {
+        if (random == null)
+        {
+            random = new Random(managerSettings.settingsGame.seedDices);
+        }
 
+        int index = random.Next(dieFacesImages.Length);
 
+        Image image = GetComponent<Image>();
+        image.sprite = dieFacesImages[index];
+
+        dieValue = index + 1;
+    }
 }

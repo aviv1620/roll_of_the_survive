@@ -7,9 +7,9 @@ public class SettingsGame
     public int costDice;
     public int daysToRecue;
 
-    public bool playerChooseSeeds;
+    public bool playerChooseSeeds;//isplayerChooseSeeds
 
-    public int seedDices;
+    public int seedDices;//dice
     public int seedLevel;
     public int seedAnimation;
 }

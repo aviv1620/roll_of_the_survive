@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(AddDiceNumBuy))]
 public class AddDiceRoll : MonoBehaviour
 {
-
     public float timeAnimation = 1f;
     public GameObject anim;
     public GameObject dice;
@@ -14,7 +13,6 @@ public class AddDiceRoll : MonoBehaviour
     {
         StartCoroutine(Play());
     }
-
 
     private IEnumerator Play()
     {

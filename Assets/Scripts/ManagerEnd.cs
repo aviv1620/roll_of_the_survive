@@ -19,8 +19,6 @@ public class ManagerEnd : MonoBehaviour
         }
 
         endSaveHighScore.SaveHighScore();
-
         endDialogReason.LoadReason(reasonTemplate);
-
     }
 }

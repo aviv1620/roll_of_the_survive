@@ -39,9 +39,6 @@ public class AddDiceNumBuy : MonoBehaviour
         int num = addDiceNum.Num;
         resourceCounter.Subtract(num);
         slotsManager.RollNewDice();
-
-
-
     }
 
     private void CounterUpdateValue(int value)

@@ -11,7 +11,6 @@ public class AddDiceNum : MonoBehaviour
     public HolderRandomLevel gameManager;
     public TMP_Text label;
 
-
     private int _num = -1;
     public int Num { get => _num; }
 

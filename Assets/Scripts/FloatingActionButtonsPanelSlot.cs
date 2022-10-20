@@ -21,7 +21,7 @@ public class FloatingActionButtonsPanelSlot : FloatingActionButtonsPanel
     {        
         List<FloatingAction> actionLst = new();
 
-        int value = diceNum.Num;
+        int value = diceNum.DieValue;
 
         for (int i=0; i < resources.Count; i++)
         {
@@ -40,7 +40,7 @@ public class FloatingActionButtonsPanelSlot : FloatingActionButtonsPanel
 
     private void OnAction(int index)
     {
-        int value = diceNum.Num;
+        int value = diceNum.DieValue;
 
         //add resources
         resources[index].Add(value);

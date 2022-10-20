@@ -21,13 +21,13 @@ public class ManagerSingleResource: MonoBehaviour
         resourceAnimation = GetComponent<ResourceAnimation>();
     }   
 
-    public void Roll()
+    public void Reduc()
     {
         numToReduc = resourceExpend.NumToReduc();
         resourceAnimation.Play(numToReduc);
     }
 
-    public void DeActiveDice()
+    public void Expend()
     {
         resourceExpend.Expend(numToReduc);
         resourceAnimation.Stop();

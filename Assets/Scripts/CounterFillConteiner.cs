@@ -16,14 +16,23 @@ public class CounterFillConteiner : MonoBehaviour
 
     private void UpdateValue(int value)
     {
-        //destory all coints
+        DestroyAllCoints();
+        CreateNewCoins(value);
+    }
+
+    private void CreateNewCoins(int value)
+    {
+        for (int i = 0; i < value; i++)
+        {
+            Instantiate(cointPref, cointConteiner);
+        }
+    }
+
+    private void DestroyAllCoints()
+    {
         foreach (Transform child in cointConteiner)
         {
             GameObject.Destroy(child.gameObject);
         }
-
-        //make new coints
-        for (int i = 0; i < value; i++)
-            Instantiate(cointPref, cointConteiner);
     }
 }

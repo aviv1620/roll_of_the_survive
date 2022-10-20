@@ -6,7 +6,6 @@ using TMPro;
 [RequireComponent(typeof(Counter))]
 public class CounterTMP : MonoBehaviour
 {
-
     private void Start()
     {
         Counter counter = GetComponent<Counter>();

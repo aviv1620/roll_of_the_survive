@@ -25,7 +25,6 @@ public class ManagerSettings : MonoBehaviour
         settingsGame = JsonUtility.FromJson<SettingsGame>(settingsGameJson);
     }
 
-
     public void RestoreDefault()
     {
         string settingsGameDefaultJson = JsonUtility.ToJson(settingsDefault.settingsGame);
@@ -38,13 +37,5 @@ public class ManagerSettings : MonoBehaviour
         settingsGame = _settingsGame;
         string settingsGameJson = JsonUtility.ToJson(settingsGame);
         PlayerPrefs.SetString(settingsGameKey, settingsGameJson);
-
     }
-
-   
-
-
-
-
-
 }
